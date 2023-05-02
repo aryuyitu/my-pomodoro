@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Pomodoro</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>My Pomodoro</h1>
+            <div class="line-break"></div>
+            <ul id="nav">
+                <li><button onclick="changeTo(study)" class="nav-button">Study</button></li>
+                <li><button onclick="changeTo(colors)" class="nav-button">Colors</button></li>
+                <li><button onclick="changeTo(settings)" class="nav-button">Settings</button></li>
+            </ul>
+        </header>
+        <div id="main">
+            <div class="section" id="study">
+                <p><span id="work-break">Work</span> session #<span id="interval-count">1</span></p>
+                <p id="time">
+                    <span id="minutes">25</span>:<span id="seconds">00</span>
+                </p>
+                <ul>
+                    <li><button onclick="start()" class="timer-button">Start</button></li>
+                    <li><button onclick="stop()" class="timer-button">Stop</button></li>
+                    <li><button onclick="reset()" class="timer-button">Reset</button></li>
+                </ul>
+            </div>
+            <div class="section" id="color-section">
+                <p>Select your colors for:</p>
+                <ul class="colors-list">
+                    <li><button onclick="setStudyColor('rgb(255, 255, 255)','rgb(244,244,244)');refreshColor()" class="color-button">off white</button></li>
+                    <li><button onclick="refreshColor()" class="color-button">green + dusty pink</button></li>
+                    <li><button onclick="refreshColor()" class="color-button">Navy Blue + Grey</button></li>
+                    <li><button onclick="refreshColor()" class="color-button">tan + sea green</button></li>
+                </ul>
+                <ul class="colors-list">
+                    <li><button onclick="refreshColor()" class="color-button">grey + Pale orange</button></li>
+                    <li><button onclick="refreshColor()" class="color-button">grey + brown</button></li>
+                    <li><button onclick="refreshColor()" class="color-button">grey + taupe</button></li>
+                    <li><button onclick="setStudyColor('rgb(255,226,235)','rgb(154,159,179)');refreshColor()" class="color-button">Light Lavender + Greyish blue</button></li>
+                </ul>
+                <div class="line-break"></div>
+                <ul class="colors-list">
+                    <li><button onclick="setBreakColor('rgb(255, 255, 255)','rgb(244,244,244)');refreshColor();" class="color-button">off white</button></li>
+                    <li><button onclick="refreshColor()" class="color-button">green + dusty pink</button></li>
+                    <li><button onclick="refreshColor()" class="color-button">Navy Blue + Grey</button></li>
+                    <li><button onclick="refreshColor()" class="color-button">tan + sea green</button></li>
+                </ul>
+                <ul class="colors-list">
+                    <li><button onclick="refreshColor()" class="color-button">grey + Pale orange</button></li>
+                    <li><button onclick="refreshColor()" class="color-button">grey + brown</button></li>
+                    <li><button onclick="refreshColor()" class="color-button">grey + taupe</button></li>
+                    <li><button onclick="setBreakColor('rgb(255,226,235)','rgb(154,159,179)');refreshColor()" class="color-button">Light Lavender + Greyish blue</button></li>
+                </ul>
+            </div>
+            <div class="section" id="settings">
+
+            </div>
+        </div> 
+    </div>
+    <script src="colorchange.js"></script>
+    <script src="timer.js"></script>
+    <script src="sectionchange.js"></script>
+</body>
+</html>
