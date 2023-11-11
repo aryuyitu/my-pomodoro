@@ -13,9 +13,9 @@
             <h1>My Pomodoro</h1>
             <div class="line-break"></div>
             <ul id="nav">
-                <li><button onclick="changeTo(study)" class="nav-button">Study</button></li>
-                <li><button onclick="changeTo(colors)" class="nav-button">Colors</button></li>
-                <li><button onclick="changeTo(settings)" class="nav-button">Settings</button></li>
+                <li><button onclick="changeTo(study)" class="nav-button gen-button">Study</button></li>
+                <li><button onclick="changeTo(colors)" class="nav-button gen-button">Colors</button></li>
+                <li><button onclick="changeTo(settings)" class="nav-button gen-button">Settings</button></li>
             </ul>
         </header>
         <div id="main">
@@ -25,37 +25,39 @@
                     <span id="minutes">25</span>:<span id="seconds">00</span>
                 </p>
                 <ul>
-                    <li><button onclick="start()" class="timer-button">Start</button></li>
-                    <li><button onclick="stop()" class="timer-button">Stop</button></li>
-                    <li><button onclick="reset()" class="timer-button">Reset</button></li>
+                    <li><button onclick="start()" class="timer-button gen-button">Start</button></li>
+                    <li><button onclick="stop()" class="timer-button gen-button">Stop</button></li>
+                    <li><button onclick="reset()" class="timer-button gen-button">Reset</button></li>
                 </ul>
             </div>
             <div class="section" id="color-section">
-                <p>Select your colors for:</p>
+                <p>Select your colors for:</p> <!--Here is all of the options for each box-->
+                <p>Study:</p>
                 <ul class="colors-list">
-                    <li><button onclick="setStudyColor('rgb(255, 255, 255)','rgb(244,244,244)');refreshColor()" class="color-button">off white</button></li>
-                    <li><button onclick="refreshColor()" class="color-button">green + dusty pink</button></li>
-                    <li><button onclick="refreshColor()" class="color-button">Navy Blue + Grey</button></li>
-                    <li><button onclick="refreshColor()" class="color-button">tan + sea green</button></li>
+                    <li><button onclick="setStudyColor('clrbtn1');refreshColor()" class="color-button clrbtn1"></button></li>
+                    <li><button onclick="setStudyColor('clrbtn2');refreshColor()" class="color-button clrbtn2"></button></li>
+                    <li><button onclick="setStudyColor('clrbtn3');refreshColor()" class="color-button clrbtn3"></button></li>
+                    <li><button onclick="setStudyColor('clrbtn4');refreshColor()" class="color-button clrbtn4"></button></li>
                 </ul>
                 <ul class="colors-list">
-                    <li><button onclick="refreshColor()" class="color-button">grey + Pale orange</button></li>
-                    <li><button onclick="refreshColor()" class="color-button">grey + brown</button></li>
-                    <li><button onclick="refreshColor()" class="color-button">grey + taupe</button></li>
-                    <li><button onclick="setStudyColor('rgb(255,226,235)','rgb(154,159,179)');refreshColor()" class="color-button">Light Lavender + Greyish blue</button></li>
+                    <li><button onclick="setStudyColor('clrbtn5');refreshColor()" class="color-button clrbtn5"></button></li>
+                    <li><button onclick="setStudyColor('clrbtn6');refreshColor()" class="color-button clrbtn6"></button></li>
+                    <li><button onclick="setStudyColor('clrbtn7');refreshColor()" class="color-button clrbtn7"></button></li>
+                    <li><button onclick="setStudyColor('clrbtn8');refreshColor()" class="color-button clrbtn8"></button></li>
                 </ul>
                 <div class="line-break"></div>
+                <p>Break:</p>
                 <ul class="colors-list">
-                    <li><button onclick="setBreakColor('rgb(255, 255, 255)','rgb(244,244,244)');refreshColor();" class="color-button">off white</button></li>
-                    <li><button onclick="refreshColor()" class="color-button">green + dusty pink</button></li>
-                    <li><button onclick="refreshColor()" class="color-button">Navy Blue + Grey</button></li>
-                    <li><button onclick="refreshColor()" class="color-button">tan + sea green</button></li>
+                    <li><button onclick="setBreakColor('clrbtn1');refreshColor()" class="color-button clrbtn1"></button></li>
+                    <li><button onclick="setBreakColor('clrbtn2');refreshColor()" class="color-button clrbtn2"></button></li>
+                    <li><button onclick="setBreakColor('clrbtn3');refreshColor()" class="color-button clrbtn3"></button></li>
+                    <li><button onclick="setBreakColor('clrbtn4');refreshColor()" class="color-button clrbtn4"></button></li>
                 </ul>
                 <ul class="colors-list">
-                    <li><button onclick="refreshColor()" class="color-button">grey + Pale orange</button></li>
-                    <li><button onclick="refreshColor()" class="color-button">grey + brown</button></li>
-                    <li><button onclick="refreshColor()" class="color-button">grey + taupe</button></li>
-                    <li><button onclick="setBreakColor('rgb(255,226,235)','rgb(154,159,179)');refreshColor()" class="color-button">Light Lavender + Greyish blue</button></li>
+                    <li><button onclick="setBreakColor('clrbtn5');refreshColor()" class="color-button clrbtn5"></button></li>
+                    <li><button onclick="setBreakColor('clrbtn6');refreshColor()" class="color-button clrbtn6"></button></li>
+                    <li><button onclick="setBreakColor('clrbtn7');refreshColor()" class="color-button clrbtn7"></button></li>
+                    <li><button onclick="setBreakColor('clrbtn8');refreshColor()" class="color-button clrbtn8"></button></li>
                 </ul>
             </div>
             <div class="section" id="settings">

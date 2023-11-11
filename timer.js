@@ -2,6 +2,8 @@ const secs = document.querySelector("#seconds");
 const mins = document.querySelector("#minutes");
 const work = document.querySelector("#interval-count");
 const session = document.querySelector("#work-break");
+var studyMin = 25;
+var breakMin = 5;
 let secCount = 0;
 let minCount = 25;
 let studying = true;
@@ -45,7 +47,7 @@ function reset() {
         studying = true;
         session.innerHTML = "Work";
     }
-    minCount = (studying ? 25:5);
+    minCount = (studying ? studyMin:breakMin);
     secCount = 0;
     displayMin();
     displaySec();
@@ -60,6 +62,7 @@ function goBreak() {
     secCount = 0;
     displayMin();
     displaySec();
+    alert('Start your break!');
 }
 
 function goStudy() {
@@ -73,6 +76,7 @@ function goStudy() {
     work.innerHTML = workCount;
     displayMin();
     displaySec();
+    alert('Break is over!');
 }
 
 function displaySec() {
