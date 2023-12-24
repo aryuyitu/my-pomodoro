@@ -1,5 +1,6 @@
-const main = document.querySelector("#main");
+const main = document.querySelector(".main");
 const container = document.querySelector("#container");
+const topnav = document.querySelector("#topnav")
 const body = document.querySelector("body");
 var clrbtn_list = document.querySelectorAll(".color-button"); //this puts every color btn into a node list
 var clrbtn_array = [...clrbtn_list]; //this uses spread syntax to convert NodeList to an array
@@ -8,6 +9,8 @@ var timerbtn_list = document.querySelectorAll(".timer-button");
 var timerbtn_array = [...timerbtn_list];
 var navbtn_list = document.querySelectorAll(".nav-button");
 var navbtn_array = [...navbtn_list];
+
+console.log("hello");
 
 let mainStudyBgColor; //main is the inner box
 let mainBreakBgColor; 
