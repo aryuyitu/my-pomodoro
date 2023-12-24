@@ -1,6 +1,7 @@
 ﻿# My Pomodoro!
 This is my first web app that I created because I wanted to use the pomodoro method to study.
 <img src="demo_pictures/study.PNG" alt="Study Section" title="Study Section">
+
 I created a working timer that will change to the break section when it runs out.
 
 <img src="demo_pictures/workingtimer.PNG" alt="Working Timer" title="Working Timer">
